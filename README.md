@@ -1,1 +1,1 @@
-# Projet3-Booki
+# booki-starter-pack
