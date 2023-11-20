@@ -34,35 +34,45 @@
             <section class="recherche">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
-                <div class="button">
-                    <form method="get" action="#">
-                        <p>
-                            <i class="fa-solid fa-location-dot"></i>
-                            <input type="text" name="ville" id="ville" placeholder="Marseille, France" size="20" maxlength="20">
-                            <input type="button" value="Rechercher" id="rechercher">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </p> 
+                <div class="btn">
+                    <form class="form-recherche"method="get" action="#">
+                        <span class="form-icone-gps">
+                            <i class="fa-solid fa-location-dot local-icone"></i>
+                        </span>
+                            <input class="form-input-recherche" type="text"  placeholder="Marseille, France">
+                            <button class="form-recherche-bouton-input" type="submit" value=""></i><span class="form-recherche-bouton-text">Rechercher</span><i class="fas fa-search fa-lg bouton-icone"></i></button>  
                     </form>
                 </div>
                 <div class="filtres">
-                    <p>Filtres</p>
-                    <div class="filtresIcon">
-                        <i class="fa-solid fa-money-bill-wave"></i>
-                        <a href="#economique">Économique</a>
+                    <h3 class="filtre-titre">Filtres</h3>
+                    <div class="filtre-conteneur">
+                        <div class="filtre-selection">
+                            <div class="filtresIcon">
+                                <i class="fa-solid fa-money-bill-wave filtre-select-icone"></i>
+                                <a class="filtre-lien" href="#economique">Économique</a>
+                            </div>
+                        </div>
+                        <div class="filtre-selection">
+                            <div class="filtresIcon">
+                                <i class="fa-solid fa-person filtre-select-icone"></i>
+                                <a class="filtre-lien" href="#familial">Familial</a>
+                            </div>
+                        </div>
+                        <div class="filtre-selection">
+                            <div class="filtresIcon">
+                                <i class="fa-solid fa-heart filtre-select-icone"></i>
+                                <a class="filtre-lien" href="#romantique">Romantique</a>
+                            </div>
+                        </div>
+                        <div class="filtre-selection">
+                            <div class="filtresIcon">
+                                <i class="fa-solid fa-fire filtre-select-icone"></i>
+                                <a class="filtre-lien" href="#nos-pepites">Nos pépites
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="filtresIcon">
-                        <i class="fa-solid fa-person"></i>
-                        <a href="#familial">Familial</a>
-                    </div>
-                    <div class="filtresIcon">
-                        <i class="fa-solid fa-heart"></i>
-                        <a href="#romantique">Romantique</a>
-                    </div>
-                    <div class="filtresIcon">
-                        <i class="fa-solid fa-fire"></i>
-                        <a href="#nos-pepites">Nos pépites
-                        </a>
-                    </div>
+                   
                 </div>
                 <div class="info">
                     <i class="fa-solid fa-info"></i>

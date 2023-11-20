@@ -3,6 +3,13 @@
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .filtres a{
+        display: flex;
+        padding: 4px 19px;
+        align-items: center;
+        gap: 10px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -53,7 +60,7 @@
     }
 
     .box img {
-        width: 193.5px;
+        width: 100%;
         height: 200px;
     }
 
@@ -76,9 +83,16 @@
     }
 
     header {
+        margin: 0;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        padding-bottom: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 
     header img {
@@ -88,47 +102,127 @@
         height: 19px;
     }
 
+    nav li {
+        flex: 1;
+        text-align: center;
+        border-top: none;
+        border-bottom: solid 2px transparent;
+        font-size: 16px;
+        margin-right: 50px;
+    }
+
+   nav li:hover {
+        border-color: #0065FC;
+        padding-bottom: 20px;
+        border-top: none;
+        border-bottom: #0065FC solid 2px;
+   }
 
     h1 {
-        width: 335px;
+        /* width: 335px; */
         height: 52px;
+        padding-left: 25px;
+        padding-top: 20px;
     }
+
+    .recherche {
+        margin: 0;
+    }
+
+    .form-recherche {
+        display: flex;
+        width: 85%;
+        margin-left: 1.7rem;
+        padding-top: 1rem;
+    }
+
+    .forme-icone-gps {
+        border-radius: 1.1rem 0 0 1.1rem;
+    }
+
+    .form-input-recherche {
+        flex: 0.2rem;
+        padding: 1.1rem;
+        width: 8rem;
+    }
+
+    .form-recherche-bouton-input {
+        border-radius: 1rem;
+        padding: 0 20px;
+    }
+
+    .form-recherche-bouton-text {
+        display: none;
+    }
+
+    .bouton-icone {
+        display: block;
+    }
+
+    /* #ville {
+        height: 19px;
+    } */
 
     .recherche p {
         width: 335px;
         height: 19px;
+        padding-left: 25px;
     }
 
-    .button {
+    /* .btn {
         width: 335px;
         height: 49px;
-    }
-
-    #rechercher {
-        border-radius: 15px 16px 15px 16px;
-        width: 49px;
-        height: 49px;
-    }
-
-    .fa-magnifying-glass {
-        
-    }
+    } */
 
     .filtres {
+        /* padding: 20px; */
+        /* gap: 20px;  */
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 20px;
+        flex-direction: row;
+        align-items: center;
+        font-size: 18px;
+    }
+
+
+    .filtre-titre {
+        display: flex;
+        margin: 0;
+        padding-left: 25px;
+    }
+
+    .filtre-conteneur {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .filtre-selection {
+        margin: 0;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    .filtresIcon {
+        display: flex;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .filtre-select-icone {
+    }
+
+    .filtre-lien {
     }
 
     .info {
+        padding: 20px;
         display: flex;
         width: 335px;
         height: 38px;
     }
 
     .fa-info {
+        padding: 20px;
         display: flex;
         justify-content: center;
         width: 20px;
@@ -165,24 +259,6 @@
         height: 26px;
     }
 
-    .fa-chart-line {
-        padding-right: 20px;
-    }
-
-    .populaires-cards {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        gap: 15px;
-    }
-
-    .card {
-        width: 335px;
-        height: 135px;
-        display: flex;
-        align-items: center;
-    }
-
     .cardsHosting {
         display: flex;
         flex-direction: column;
@@ -190,14 +266,35 @@
         height: 192px;
     }
     
-    .hebergements {
-
-    }
     .hebergements-cards {
         display: flex;
         flex-direction: column;
-
         background-color: white;
+    }
+
+    .hostingMainViewmore {
+        background-color: white;
+        font-size: 18px;
+        padding-bottom: 35px;
+    }
+
+    .card {
+        width: 335px;
+        height: 135px;
+        display: flex;
+        align-items: center;
+        margin: 15px;
+    }
+
+    .fa-chart-line {
+        padding-right: 20px;
+    }
+
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
     }
 
     #activites {
@@ -220,6 +317,8 @@
 
     .box img {
         width: 315px;
+        object-fit: cover;
+        object-position: center;
     }
 
     .box h5 {
