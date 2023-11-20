@@ -2,6 +2,14 @@
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
+
+
+@media (max-width: 1440px){
+    .bouton-icone {
+        display: none;
+    }
+}
+
 @media (max-width: 1024px) {
     .filtres a{
         display: flex;
@@ -10,6 +18,13 @@
         gap: 10px;
     }
 
+    .bouton-icone{
+        display: none;
+    }
+
+    .filtre-select-icone {
+        padding-right: -10px;
+    }
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -203,15 +218,17 @@
     }
     .filtresIcon {
         display: flex;
-        width: 100%;
+        /* width: 100%; */
         padding-top: 10px;
         padding-bottom: 10px;
     }
 
     .filtre-select-icone {
+        padding-right: -10px;
     }
 
-    .filtre-lien {
+    .filtres a {
+        padding: 0;
     }
 
     .info {

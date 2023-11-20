@@ -189,10 +189,9 @@ li:hover {
     border: 2px solid #d9d9d9;
     border-radius: 2rem;
     margin-bottom: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-right: 1.5rem;
-    padding-left: 0.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
     cursor: pointer;
     transition-duration: 0.1s;
     font-weight: 800;
