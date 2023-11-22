@@ -44,12 +44,11 @@ header img {
 
 ul {
     list-style: none;
-    margin-right: 10px;
+    gap: 40px;
 }
 
 li {
     padding-top: 20px;
-    margin-left: 40px;
     transition-duration: 0.1s;
     border-top: 2px transparent solid;
 }
@@ -124,49 +123,7 @@ li:hover {
     display: none;
 }
 
-/* .button .fa-location-dot {
-    color: black;
-    background-color: var(--main-bg-color);
-    padding: 10px 15px 10px 15px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    margin-right: -4px;
-    align-items: center;
-} */
-
-/* #ville {
-    border: var(--main-bg-color) 1px solid;
-    padding: 10px 10px 8px 10px;
-} */
-
-/* input::placeholder {
-    color: black;
-    font-weight: 600;
-} */
-
-
-
-/* #rechercher {
-    border: var(--main-color) 1px solid;
-    background-color: var(--main-color);
-    color: white;
-    font-weight: 500;
-    padding: 10px 10px 8px 10px;
-    margin-left: -4px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-} */
-
-/* filtres */
-
 .filtres {
-    /* margin: 30px 0px 30px 0px;
-    padding: 10px 0px 10px 0px;
-    font-weight: 600;
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-    align-items: center; */
 
     display: flex;
     margin-top: 2rem;
@@ -176,6 +133,7 @@ li:hover {
 .filtre-conteneur {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 
 }
 
@@ -202,13 +160,6 @@ li:hover {
 }
 
 .filtresIcon {
-    /* border: var(--main-bg-color) 2px solid;
-    border-radius: 30px;
-    margin-right: 40px;
-    padding: 10px 15px 10px 15px;
-    justify-content: center;
-    transition-duration: 0.1s; */
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -218,13 +169,11 @@ li:hover {
 .filtre-select-icone {
     display: flex;
     padding-left: 15px;
-    /* margin: 5px; */
     color: #0065FC;
 }
 
 .filtre-lien {
     padding: 0;
-    /* margin: 0 1rem; */
 }
 
 
@@ -434,6 +383,7 @@ li:hover {
     flex-direction: row;
     justify-content: space-around;
     border-radius: 20px;
+    column-gap: 20px;
 }
 
 .box {
@@ -447,14 +397,16 @@ li:hover {
     transition-duration: 0.1s;
 }
 
-.box h5 {
+.box h6 {
     padding-left: 15px;
     padding-right: 30px;
 }
 
 .activites-cards img {
-    width: 297px;
-    height: 380px;
+    max-width: 297px;
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 297/380;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
