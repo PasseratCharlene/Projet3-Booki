@@ -40,9 +40,6 @@
         align-items: center;
     }
 
-
-
-
     .populaires-cards .card-title {
         font-size: 14px;
     }
@@ -59,7 +56,6 @@
         padding: 20px 19px 20px 19px;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         align-items: flex-start;
         gap: 30px;
         padding: 20px;
@@ -85,7 +81,6 @@
         object-fit: cover;
     }
 
-
     .liste {
         padding-right: 100px;
     }
@@ -102,14 +97,12 @@
 
 }
 
-
 @media (max-width: 1003px) {
 
     .activites-cards {
         padding: 20px 19px 20px 19px;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         align-items: flex-start;
         gap: 5px;
         padding: 20px;
@@ -232,7 +225,6 @@
         font-size: 18px;
     }
 
-
     .filtre-titre {
         display: flex;
         margin: 0;
@@ -250,6 +242,7 @@
         margin-top: 15px;
         margin-left: 15px;
     }
+
     .filtresIcon {
         display: flex;
         padding-top: 10px;
@@ -285,6 +278,7 @@
         flex-direction: column;
         margin: 0;
     }
+
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column-reverse;
@@ -357,7 +351,7 @@
 
     .populaires-cards {
         display: flex;
-        flex-direction: row;
+        flex-direction: ro;
         flex-wrap: wrap;
         margin: 0;
         margin-bottom: 30px;
@@ -374,7 +368,7 @@
     .activites-cards {
         background: white;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         gap: 30px;
     }
@@ -430,7 +424,7 @@
         max-width: 375px;
         width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         margin: auto;
     }
@@ -468,14 +462,12 @@
         min-width: 345px;
     }
 
-    
-
     .activites-cards {
         background: white;
         max-width: 345px;
         width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         margin: auto;
     }
@@ -513,7 +505,7 @@
     .activites-cards {
         background: white;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         gap:30px;
         padding: 0;
@@ -528,9 +520,9 @@
         justify-content: center;
         /* align-items: flex-start; */
     }
-    .box img {
-        /* height: 160px; */
-    }
+    /* .box img {
+        height: 160px;
+    }*/
 
     .footer {
         width: 100%;

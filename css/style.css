@@ -398,8 +398,10 @@ li:hover {
 }
 
 .box h6 {
-    padding-left: 15px;
-    padding-right: 30px;
+    font-size: 16px;
+    margin: 0;
+    padding: 20px;
+    height: 26px;
 }
 
 .activites-cards img {
